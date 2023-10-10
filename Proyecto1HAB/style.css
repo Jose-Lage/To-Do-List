@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-fondo: rgb(221, 193, 116);
+  --color-azul: rgb(11, 47, 100);
+  --color-blanco: rgb(255, 255, 255);
+  --color-noche: #535252;
+  --color-negro: rgb(0, 0, 0);
+}
+.modo-oscuro {
+  background-color: var(--color-noche);
+  color: var(--color-azul);
+  height: 100%;
+}
+.modo-oscuro button:hover {
+  background-color: rgb(139, 139, 139);
+}
+
+body {
+  background-color: var(--color-fondo);
+  min-height: 100vh;
+  text-align: center;
+  font-size: large;
+  color: var(--color-azul);
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h2 {
+  position: relative;
+}
+
+#listaTareas {
+  border: 5px solid var(--color-azul);
+  list-style-type: none;
+  background-color: var(--color-azul);
+
+  position: relative;
+  width: 50%;
+  left: 25%;
+  color: var(--color-blanco);
+  border-radius: 12.5px;
+}
+
+input[type="checkbox"] {
+  border-radius: 150px;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  position: relative;
+  right: 5%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  display: inline;
+  margin: 20px auto;
+  padding: 0.3rem;
+  background-color: var(--color-azul);
+  border-color: var(--color-blanco);
+  padding-left: 0.5rem;
+}
+
+input:focus,
+input:hover {
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+}
+
+form {
+  margin-right: 10px;
+  width: 50%;
+  position: relative;
+  left: 25%;
+
+  border-radius: 12.5px;
+  color: var(--color-azul);
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+select {
+  padding: 0.3rem;
+  background-color: var(--color-azul);
+  border-color: var(--color-negro);
+  border-radius: 25px;
+  color: var(--color-blanco);
+}
+
+select:hover {
+  background-color: var(--color-blanco);
+  color: var(--color-negro);
+}
+
+button {
+  padding: 0.3rem;
+
+  border-radius: 25px;
+}
+#modoBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--color-blanco);
+}
+
+button:hover {
+  background-color: var(--color-fondo);
+  color: var(--color-negro);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: medium;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #listaTareas {
+    width: 80%;
+    left: 10%;
+  }
+
+  form {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #listaTareas {
+    width: 90%;
+    left: 5%;
+  }
+
+  form {
+    width: 90%;
+    left: 5%;
+  }
+}
